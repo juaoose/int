@@ -44,8 +44,6 @@ if (5 < 10) {
 		{token.INT, "10"},
 		{token.SEMICOLON, ";"},
 		// let add = fn(x, y) {
-		//   x + y;
-		// };
 		{token.LET, "let"},
 		{token.IDENT, "add"},
 		{token.ASSIGN, "="},
@@ -56,10 +54,12 @@ if (5 < 10) {
 		{token.IDENT, "y"},
 		{token.RPAREN, ")"},
 		{token.LBRACE, "{"},
+		//   x + y;
 		{token.IDENT, "x"},
 		{token.PLUS, "+"},
 		{token.IDENT, "y"},
 		{token.SEMICOLON, ";"},
+		// };
 		{token.RBRACE, "}"},
 		{token.SEMICOLON, ";"},
 		// let result = add(five, ten);
