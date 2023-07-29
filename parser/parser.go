@@ -68,7 +68,7 @@ func (p *Parser) parseStatement() ast.Statement {
 	}
 }
 
-func (p *Program) parseReturnStatement() *ast.ReturnStatement {
+func (p *Parser) parseReturnStatement() *ast.ReturnStatement {
 	stmt := &ast.ReturnStatement{Token: p.curToken}
 
 	p.nextToken()
